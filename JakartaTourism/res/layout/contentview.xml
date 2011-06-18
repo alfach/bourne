@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg11"  
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+ <TextView  
+  android:id="@+id/title"
+  android:layout_height="35px"
+  android:background="@drawable/bg9"
+  android:layout_width="wrap_content" 
+  android:gravity="center_vertical" 
+  android:textStyle="normal|bold" 
+ android:textColor="#ffffff"
+          android:shadowColor="#000000"
+          android:shadowDx="0"
+          android:shadowDy="1"
+          android:shadowRadius="1">
+  </TextView>
+    
+<Gallery 
+  android:id="@+id/gallery1" 
+  android:layout_width="fill_parent" 
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/title">
+  </Gallery>
+
+<TextView  
+  android:id="@+id/isi" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"
+  android:textColor="#ffffff"
+  android:textSize="13px"
+  android:layout_below="@+id/gallery1">
+  </TextView>
+ 
+<TextView 
+  android:id="@+id/alamat" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"
+  android:textColor="#ffffff"
+  android:textSize="13px"
+  android:layout_below="@+id/isi"
+  >
+  </TextView>
+  <TextView 
+  android:id="@+id/lokasi" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"
+  android:textColor="#ffffff"
+  android:textSize="13px"
+  android:layout_below="@+id/alamat"
+  >
+  </TextView>
+  <Button
+     android:text="Rute Peta"      
+     android:layout_width="wrap_content" 
+  android:layout_height="wrap_content" 
+     android:id="@+id/rute"  
+     
+     android:layout_below="@+id/lokasi"      
+     >
+</Button>  
+</RelativeLayout>

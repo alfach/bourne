@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg11"  
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView 
+          android:id="@+id/TextView01" 
+          android:layout_height="35px"
+          android:background="@drawable/bg9" 
+          android:text="      JakartaTourism"
+          android:gravity="center_vertical" 
+          android:textStyle="normal|bold" 
+          android:textColor="#ffffff"
+          android:shadowColor="#000000"
+          android:shadowDx="0"
+          android:shadowDy="1"
+          android:shadowRadius="1"        
+          android:layout_width="fill_parent">
+ </TextView>
+ 
+ <ListView android:id="@+id/ListView01" android:layout_height="fill_parent"
+ android:layout_width="fill_parent"
+ android:layout_below="@+id/TextView01">
+ </ListView>
+ 
+ 
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+  
+ <TextView 
+          android:id="@+id/title" 
+          android:layout_height="35px"
+          android:layout_alignParentTop="true"
+          android:background="@drawable/bg9"           
+          android:gravity="center_vertical" 
+          android:textStyle="normal|bold" 
+          android:textColor="#ffffff"
+          android:shadowColor="#000000"
+          android:shadowDx="0"
+          android:shadowDy="1"
+          android:shadowRadius="1"        
+          android:layout_width="fill_parent"
+          android:layout_above="@+id/mapview1"
+          >
+ </TextView>
+ <RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="fill_parent"
+  >
+  <com.google.android.maps.MapView 
+    android:id="@+id/mapview1"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:enabled="true" 
+    android:clickable="true" 
+    android:apiKey="0AKWhhAwhPFzosWelrx9ne7NnsoUinzygPbmZfA" 
+    />
+  <ZoomControls android:id="@+id/zoom"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:layout_alignParentRight="true" />
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.alfach.JakartaTourism"
+      android:versionCode="1"
+      android:versionName="1.0">
+      
+      <uses-permission 
+        android:name="android.permission.INTERNET" /> 
+      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+      <uses-permission 
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+      
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".JakartaTourism"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <!-- this activity will be called, when we fire our self created ACTION_WIDGET_CONFIGURE -->
+		<activity android:name=".ContentTourism"
+		          android:label="">			
+		</activity>
+		
+		<activity android:name=".MapRoute"
+		          android:label="">			
+		</activity>
+		
+		<uses-library android:name="com.google.android.maps" />    
+		
+    </application>
+    <uses-sdk android:minSdkVersion="7" />
+
+</manifest> 
